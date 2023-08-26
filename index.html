@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,13 +33,13 @@
 </head>
 <body>
   <header>
-
-    <img
+    <img width="100" height="100"
       src="https://res.cloudinary.com/tal-amit-dev/image/upload/v1679773600/Instagram/WhatsApp_Image_2023-03-25_at_22.42.55_gh0eyd.jpg"
       alt="">
     <h1>Tal Amit</h1>
     <small>R&D team lead</small>
   </header>
+
   <section class="link-list">
     <div class="link-preview" title="Check out my github">
       <a href="https://github.com/tal0311 
@@ -63,12 +62,18 @@
       <a href="https://www.instagram.com/tal.amit/" target="_blank">Instagram</a>
     </div>
   </section>
+
+  <div class="accessibility-container" onclick="toggleAcc()">
+    <img width="24" height="24" src="assets/images/accessibility_new_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+  </div>
+
+  <script>
+    function toggleAcc() {
+      document.body.classList.toggle('accessibility');
+    }
+
+  </script>
 </body>
-</html>
-
-<body>
 
 
-
-</body>
 </html>

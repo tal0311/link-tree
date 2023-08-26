@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap");
 
 :root {
- --Clr1: #e4e6e8;
- --Clr2: #84c2e6;
- --clr3: #46a9e2;
+ --Clr1: #fff;
+ --Clr2: #46a9e2;
+}
+
+body.accessibility {
+ --Clr1: #e4e4e4;
+ --Clr2: #444;
 }
 
 * {
@@ -57,11 +61,21 @@ h1 {
 
 .link-preview a {
  text-decoration: none;
- color: var(--clr3);
+ color: var(--Clr2);
  font-weight: 500;
 }
 link-preview:active {
- background: var(--clr2);
+ background: var(--Clr2);
  color: var(--Clr1);
- box-shadow: 0 0 0 1px var(--clr1);
+ box-shadow: 0 0 0 1px var(--Clr1);
+}
+
+.accessibility-container {
+ position: fixed;
+ background: #fff;
+ bottom: 1rem;
+ display: grid;
+ padding: 0.5rem;
+ border-start-end-radius: 10px;
+ border-end-end-radius: 10px;
 }
