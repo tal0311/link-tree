@@ -28,12 +28,20 @@ header {
  grid-auto-flow: row;
  place-items: center;
  margin: 2rem 0 0 0;
+ position: relative;
 }
-header img {
+header .profile-img {
  width: 100px;
  border-radius: 50%;
  height: 100px;
  object-fit: cover;
+}
+header .copy-to-clip {
+ position: absolute;
+ background: #fff;
+ border-radius: 50%;
+ padding: 0.2rem;
+ cursor: pointer;
 }
 
 h1 {

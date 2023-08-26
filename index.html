@@ -34,9 +34,13 @@
 </head>
 <body>
   <header>
-    <img width="100" height="100"
-      src="https://res.cloudinary.com/tal-amit-dev/image/upload/v1679773600/Instagram/WhatsApp_Image_2023-03-25_at_22.42.55_gh0eyd.jpg"
-      alt="">
+    <div onclick="copyToClipboard()">
+      <img class="copy-to-clip" width="24" title="Copy to clipboard" height="24"
+        src="assets/images/content_paste_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+      <img class="profile-img" width="100" height="100"
+        src="https://res.cloudinary.com/tal-amit-dev/image/upload/v1679773600/Instagram/WhatsApp_Image_2023-03-25_at_22.42.55_gh0eyd.jpg"
+        alt="">
+    </div>
     <h1>Tal Amit</h1>
     <small>R&D team lead</small>
   </header>
@@ -71,6 +75,11 @@
   <script>
     function toggleAcc() {
       document.body.classList.toggle('accessibility');
+    }
+
+    function copyToClipboard() {
+      navigator.clipboard.writeText(window.location.href);
+      alert('Link copied to clipboard successfully!, you can now share it with your friends');
     }
 
   </script>
